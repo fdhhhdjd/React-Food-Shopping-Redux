@@ -1,12 +1,11 @@
-import { combineReducers } from 'redux';
-import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import cartReducer from './cart/cart.reducer';
-
+import { combineReducers } from "redux";
+import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import cartReducer from "./cart/cart.reducer";
 const persistConfig = {
-  key: 'quoality-guest',
+  key: "root",
   storage,
-  whitelist: ['cart'],
+  whitelist: ["cart"],
 };
 
 const appReducer = combineReducers({

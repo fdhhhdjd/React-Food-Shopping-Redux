@@ -1,4 +1,4 @@
-import { CartActionTypes } from './cart.actionTypes';
+import { CartActionTypes } from "./cart.actionTypes";
 
 export const cartAddItem = (item) => ({
   type: CartActionTypes.CART_ADD_ITEM,
@@ -11,6 +11,6 @@ export const cartRemoveItem = (item) => ({
 });
 
 export const cartclearItem = (item) => ({
-  type: CartActionTypes.CART_CLEAR_ITEM_FROM_CART,
+  type: CartActionTypes.CART_CLEAR_ITEM,
   payload: item,
 });
