@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { connect, useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import EmptyCart from "../../components/Cart/EmptyCart";
 import Footer from "../../components/common/Footer";
 import Logo from "../../components/common/Logo";
 import Menu from "../../components/common/Menu";
+import { ChooseFood } from "../../Context/ChooseFood";
 import {
   selectCartItems,
   selectCartItemsCount,

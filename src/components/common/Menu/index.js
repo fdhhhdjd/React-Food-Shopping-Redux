@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react';
-import MenuItem from './MenuItem';
-import './styles.css';
+import React, { forwardRef, useContext } from "react";
+import MenuItem from "./MenuItem";
+import "./styles.css";
 
 const Menu = forwardRef(({ list }, ref) => (
   <main ref={ref}>
